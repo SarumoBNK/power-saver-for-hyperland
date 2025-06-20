@@ -1,0 +1,20 @@
+████████████████████████████████████████
+█─██─█───█─███────████─███─█───█─██─█─█─█
+█─██─█─███─███─██─████──█──█─███──█─█─█─█
+█────█───█─███────████─█─█─█───█─█──█─█─█
+█─██─█─███─███─███████─███─█─███─██─█─█─█
+█─██─█───█───█─███████─███─█───█─██─█───█
+████████████████████████████████████████
+|
+|-> --help  (Opens help menu)
+|-> ./powerSaver --path | -p <PATH> (Use your PATH to change hyperland settings. 
+                                    Please choose path to hyperland monitor setting.
+                                    For more information, please open README on project github )
+|-> ./powerSaver --size_frame | -sf <[YOUR SIZE]@[YOUR Ghz]> (Use your SIZE to change screen size in hyperland settings.
+                                                             Also use your second parametr to change Ghz in your monitor by changing monitor settings in hyperland config.
+                                                             If it doesn't work please check README)
+|-> ./powerSaver --scaling | -s <SCALING> (This parametr for window scaling. Sometime doesn't work correctly with some applications.)
+|-> ./powerSaver --power-daemon | - pd < performance | balanced | power-saver > (Use one of these parametrs)
+
+
+FOR MORE INFORMATION HOW TO CORRECTLY USE THIS SCRIPT, PLEASE, READ README!!!
