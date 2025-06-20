@@ -28,7 +28,7 @@ public:
     void printArgs();
 
     char* scaling = new char[1]{'1'}; // Default scaling == 1
-    char* path = new char[]{"/home/sarumo/.config/hypr/monitors.conf"}; // Path to file with monitor configuration
+    char* path = new char[]{"/~/.config/hypr/monitors.conf"}; // Path to file with monitor configuration
     char* size_frame = new char[9]{"prefered"}; // Size for yours monitor. Default is preferd size for your monitor(max size and freq)
     char* power_daemon = new char[9]{"balanced"}; // Parametr for additional packedge, default = balanced
 };
