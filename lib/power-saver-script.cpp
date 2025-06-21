@@ -34,6 +34,18 @@ Arguments& Arguments::parse(int& argc, char** argv){
         return false;
     };
 
+    auto forStrigOperation = [&](std::string& str){
+        if (argc-1 > 0 && (*(argv+1))[0] != '-'){
+            argv++;
+            argc--;
+
+            str = *argv;
+            
+            return true;
+        }
+        return false;
+    };
+
     while(argc > 1){
         argc--;
         argv++;
@@ -44,7 +56,7 @@ Arguments& Arguments::parse(int& argc, char** argv){
             }
 
             if (!strcmp(*argv, "--path") || !strcmp(*argv, "-p")){
-                if (!generalOperation(this->path)){
+                if (!forStrigOperation(this->path)){
                     printf("Use --path | -p <PATH>\n--help for more info");
                     fflush(stdout);
                 }
@@ -81,7 +93,7 @@ Arguments& Arguments::parse(int& argc, char** argv){
 }
 
 void Arguments::printArgs(){
-    printf("Path: %s\nScaling: %s\nSize: %s\nPower-Daemon: %s\n", this->path, this->scaling, this->size_frame, this->power_daemon);
+    printf("Path: %s\nScaling: %s\nSize: %s\nPower-Daemon: %s\n", this->path.c_str(), this->scaling, this->size_frame, this->power_daemon);
     return;
 }
 
